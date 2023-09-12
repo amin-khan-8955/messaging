@@ -8,7 +8,9 @@ import ConnectionList from '../components/ConnectionList';
 
 const Connection = () => {
 	const { user: me } = useSelector(state => state.auth);
-	const [searchInput, setSearchInput] = useState("");
+	 
+	//  this datta is coming from redux
+
 	const { connectedUsers, requstedUsers, pandingUsers, allUsers } = useSelector(state => state.connection);
 
 	const searchHandler = (e) => {
