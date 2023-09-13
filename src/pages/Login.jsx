@@ -69,10 +69,9 @@ const Login = () => {
 					//login to our app
 					dispatch(
 						login(
-							{ id: docs[0].id, ...docs[0].data() }
+							{ id: docs[0].id, ...docs[0].data()}
 						)
 					);
-
 				} else {
 					//if data not exist in databse then create account in database then aftern login 
 					const newUser = await addDoc(
@@ -110,9 +109,8 @@ const Login = () => {
 	});
 
 	const ErrMassage = ({ name }) => <ErrorMessage name={name} render={msg =>
-		<div className='text-red-500 text-sm'>{msg}</div>}
-	/>
-
+		<div className='text-red-500 text-sm'>{msg}</div>}/>
+		
 	console.log("current", getAuth(firebaseApp).currentUser)
 	return (
 		<div>
