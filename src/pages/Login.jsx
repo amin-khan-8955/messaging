@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'	
+import { Link } from 'react-router-dom'
 import { Formik, Field, Form, ErrorMessage, } from 'formik';
 import * as Yup from 'yup';
 import { FcGoogle } from "react-icons/fc";
@@ -13,7 +13,7 @@ import { toast } from 'react-hot-toast';
 
 const Login = () => {
 	const dispatch = useDispatch();
-			
+
 	const loginClickHandle = async (value) => {
 		const loginWithAuth = async () => {
 			try {
@@ -47,7 +47,7 @@ const Login = () => {
 
 
 	}
-	
+
 	const googleClickHandler = () => {
 		const loginWithGoogle = async () => {
 			try {

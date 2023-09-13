@@ -19,7 +19,6 @@ import ConfirmModel from './confirmModel';
 import moment from 'moment/moment';
 
 
-
 const MessageBox = () => {
     const dispatch = useDispatch();
     const [textMessge, setTextMessage] = useState("");

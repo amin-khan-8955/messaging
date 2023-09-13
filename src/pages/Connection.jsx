@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 import UserList from '../components/UserList';
 import { BiEdit } from "react-icons/bi";
 import { useDispatch, useSelector } from 'react-redux';
@@ -8,9 +9,7 @@ import ConnectionList from '../components/ConnectionList';
 
 const Connection = () => {
 	const { user: me } = useSelector(state => state.auth);
-	 
-	//  this datta is coming from redux
-
+	const [searchInput, setSearchInput] = useState("");
 	const { connectedUsers, requstedUsers, pandingUsers, allUsers } = useSelector(state => state.connection);
 
 	const searchHandler = (e) => {
